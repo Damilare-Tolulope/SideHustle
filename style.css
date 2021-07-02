@@ -1,3 +1,5 @@
+/* ===== Code written by Ajele Oluwadamilare (SH-IT-24440)===== */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -358,7 +360,13 @@ body {
 		grid-template-columns: repeat(1, 1fr);
 		margin-bottom: 100px;
 	}
+	.testifiers {
+		flex-direction: column;
+		height: 70vh;
+	}
 }
+
+/* =======Mobile screen========= */
 @media screen and (max-width: 400px) {
 	.nav-links ul {
 		width: 150px;
