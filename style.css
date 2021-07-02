@@ -10,7 +10,6 @@ body {
 
 .container {
 	color: #fff;
-	/* height: 100vh; */
 	margin: 40px 8%;
 }
 
@@ -29,6 +28,15 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	color: #87aca5;
+}
+
+.nav-links ul li:hover {
+	color: #fff;
+}
+
+.nav-links ul li,
+.logo {
+	cursor: pointer;
 }
 
 /* ========= Main ========= */
@@ -51,14 +59,14 @@ body {
 }
 
 .text .head {
-	font: 500 38px calibri;
+	font: 900 38px calibri;
 	line-height: 55px;
 	margin-bottom: 30px;
 }
 
 .text .desc {
 	margin-bottom: 25px;
-	font: 500 25px calibri;
+	font: 200 25px calibri;
 }
 
 .btn {
@@ -68,8 +76,14 @@ body {
 	outline: none;
 	background-color: #40aed1;
 	color: #fff;
-	font: 500 18px calibri;
+	font: 700 18px calibri;
 	width: 300px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: skyblue;
+	transition: 0.3s linear ease;
 }
 
 /* ========= Details ========= */
@@ -170,7 +184,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* position: absolute; */
 }
 
 .profiles {
@@ -252,6 +265,12 @@ body {
 	color: #fff;
 	font: 700 18px calibri;
 	width: 200px;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background-color: skyblue;
+	transition: 0.3s linear ease;
 }
 
 /* ==========Footer======== */
@@ -312,7 +331,11 @@ body {
 	font: 500 20px calibri;
 }
 .footer-links ul li {
+	cursor: pointer;
 	margin-bottom: 10px;
+}
+.footer-links ul li:hover {
+	color: #fff;
 }
 
 .social {
@@ -322,4 +345,139 @@ body {
 	width: 50px;
 }
 
+.end {
+	text-align: center;
+	margin-top: 70px;
+	font: 500 25px calibri;
+}
+
 /* ======CODE WRITTEN BY AJELE OLUWADAMILARE (SH-IT-24440)====== */
+
+@media screen and (max-width: 768px) {
+	.details {
+		grid-template-columns: repeat(1, 1fr);
+		margin-bottom: 100px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.nav-links ul {
+		width: 150px;
+		font: 300 16px calibri;
+	}
+	.logo img {
+		height: 30px;
+		width: 100px;
+	}
+	.main img {
+		height: 90%;
+		width: 90%;
+	}
+	.text {
+		width: 90%;
+	}
+	.text .head {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.text .desc {
+		font-size: 20px;
+	}
+	.btn {
+		width: 250px;
+	}
+	.details {
+		grid-template-columns: repeat(1, 1fr);
+		margin-bottom: 100px;
+	}
+	.detail {
+		width: 400px;
+	}
+	.detail span {
+		font-size: 20px;
+	}
+
+	.collaboration {
+		margin-top: 550px;
+	}
+	.collaboration > img {
+		width: 100%;
+	}
+	.collaboration-text {
+		margin-left: 0px;
+	}
+	.collaboration-text p {
+		font-size: 21px;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.c-div span {
+		margin-bottom: 15px;
+	}
+	.collaboration,
+	.footer-tabs,
+	.footer-links,
+	.testifiers {
+		flex-direction: column;
+	}
+	.testimonies {
+		height: 90vh;
+	}
+	.testifiers {
+		height: 80vh;
+	}
+	.profiles {
+		border-radius: 10px;
+	}
+	.subscribe {
+		width: 80%;
+		margin: 4%;
+		margin-top: -150px;
+	}
+	.subscribe p {
+		font-size: 20px;
+	}
+	.subscribe span {
+		font-size: 16px;
+	}
+	.form input {
+		width: 250px;
+		margin-bottom: 20px;
+	}
+	.form button {
+		margin-left: 0px;
+		width: 250px;
+	}
+	.footer {
+		height: 115vh;
+	}
+	.footer > img {
+		margin-top: 250px;
+		margin-bottom: 20px;
+	}
+	.footer-tabs {
+		align-items: flex-start;
+	}
+	.location {
+		width: 350px;
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+	.location img {
+		margin: 10px 20px 0 0;
+	}
+	.message {
+		margin: 10px 0;
+		margin-left: -14px;
+	}
+	.footer-links ul {
+		margin-top: 20px;
+	}
+	.socials {
+		margin: 5px auto;
+	}
+	.end {
+		font-size: 15px;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+}
